@@ -58,7 +58,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                 ),
                 verticalSpace(20),
-                SignupListenerWidget(),
+                const SignupListenerWidget(),
               ],
             ),
           ),
