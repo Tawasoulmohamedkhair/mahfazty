@@ -37,15 +37,16 @@ class _HomeScreenState extends State<HomeScreen> {
               splashColor: Colors.transparent,
               highlightColor: Colors.transparent),
           child: BottomNavigationBar(
-              selectedIconTheme: IconThemeData(color: MyColors.yellowcolor),
-              unselectedIconTheme: IconThemeData(color: Colors.white),
+              selectedIconTheme:
+                  const IconThemeData(color: MyColors.yellowcolor),
+              unselectedIconTheme: const IconThemeData(color: Colors.white),
               showSelectedLabels: false,
               showUnselectedLabels: false,
               backgroundColor: Colors.transparent,
               currentIndex: currentIndex,
               onTap: (value) {
                 setState(() {
-                  print(currentIndex = value);
+                  currentIndex = value;
                 });
               },
               elevation: 0,
