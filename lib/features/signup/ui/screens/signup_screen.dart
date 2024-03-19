@@ -4,7 +4,6 @@ import 'package:mahfazty/core/helpers/spacing.dart';
 import 'package:mahfazty/core/theming/fonts.dart';
 import 'package:mahfazty/core/theming/mycolors.dart';
 import 'package:mahfazty/core/widgets/my_button.dart';
-import 'package:mahfazty/features/login/logic/cubit/login_cubit.dart';
 import 'package:mahfazty/features/login/ui/widgets/terms_and_condition.dart';
 import 'package:mahfazty/features/signup/logic/cubit/signup_cubit.dart';
 import 'package:mahfazty/features/signup/ui/widget/signup_form_fields.dart';
@@ -39,10 +38,10 @@ class _SignupScreenState extends State<SignupScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                verticalSpace(50),
+                //verticalSpace(30),
                 const SignupFormFields(),
                 const TermsAndCondition(),
-                verticalSpace(20),
+                verticalSpace(5),
                 MyButton(
                   gradient: const LinearGradient(
                       begin: Alignment.centerLeft,
@@ -57,7 +56,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     style: FontsHelper.fonts16Boldwhite,
                   ),
                 ),
-                verticalSpace(20),
+                verticalSpace(5),
                 const SignupListenerWidget(),
               ],
             ),
