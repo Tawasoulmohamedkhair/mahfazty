@@ -12,7 +12,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int currentIndex = 0;
-  List<Widget> screens = [Home(), TransactionScreen()];
+  List<Widget> screens = [const Home(), const TransactionScreen()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: Container(
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
+        margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 25),
         decoration: const BoxDecoration(
             color: Colors.black,
             borderRadius: BorderRadius.all(Radius.circular(50))),
@@ -37,15 +37,16 @@ class _HomeScreenState extends State<HomeScreen> {
               splashColor: Colors.transparent,
               highlightColor: Colors.transparent),
           child: BottomNavigationBar(
-              selectedIconTheme: IconThemeData(color: MyColors.yellowcolor),
-              unselectedIconTheme: IconThemeData(color: Colors.white),
+              selectedIconTheme:
+                  const IconThemeData(color: MyColors.yellowcolor),
+              unselectedIconTheme: const IconThemeData(color: Colors.white),
               showSelectedLabels: false,
               showUnselectedLabels: false,
               backgroundColor: Colors.transparent,
               currentIndex: currentIndex,
               onTap: (value) {
                 setState(() {
-                  print(currentIndex = value);
+                  currentIndex = value;
                 });
               },
               elevation: 0,
