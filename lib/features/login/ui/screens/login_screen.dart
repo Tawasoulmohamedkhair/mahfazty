@@ -18,21 +18,19 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: MyColors.blackcolor,
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              verticalSpace(120),
-              const EmailAndPassword(),
-              verticalSpace(20),
-              const TermsAndCondition(),
-              verticalSpace(10),
-              const DonotHaveaccount(),
-              const BuildBlockListener(),
-            ],
-          ),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            verticalSpace(120),
+            const EmailAndPassword(),
+            verticalSpace(20),
+            const TermsAndCondition(),
+            verticalSpace(10),
+            const DonotHaveaccount(),
+            const BuildBlockListener(),
+          ],
         ),
       ),
     );

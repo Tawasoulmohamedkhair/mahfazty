@@ -43,12 +43,12 @@ class _SignupFormFieldsState extends State<SignupFormFields> {
             'Welcome To Mahfazty',
             style: FontsHelper.font28SemiBoldWhite,
           ),
-          verticalSpace(10),
+          verticalSpace(5),
           Text(
             'Name',
             style: FontsHelper.fonts16Boldwhite,
           ),
-          verticalSpace(10),
+          verticalSpace(5),
           MyTextFormfield(
             validator: (value) {
               if (value == null || value.isEmpty) {
@@ -60,12 +60,12 @@ class _SignupFormFieldsState extends State<SignupFormFields> {
             isobsucre: false,
             hintText: 'Enter Your Name',
           ),
-          verticalSpace(10),
+          verticalSpace(5),
           Text(
             'Email',
             style: FontsHelper.fonts16Boldwhite,
           ),
-          verticalSpace(10),
+          verticalSpace(5),
           MyTextFormfield(
             validator: (value) {
               if (value == null || value.isEmpty) {

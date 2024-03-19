@@ -10,6 +10,7 @@ class FontsHelper {
       fontSize: 13, fontWeight: FontWeight.w300, color: Colors.grey);
   static TextStyle fonts13Bolwhite = GoogleFonts.poppins(
       fontSize: 13, fontWeight: FontWeight.w300, color: Colors.white);
+      
 
   static TextStyle font16regular =
       GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.normal);
